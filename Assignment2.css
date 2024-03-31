@@ -1,0 +1,145 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Background Image */
+body {
+    background-image: url(https://wallpapercave.com/wp/wp4871166.jpg);
+    background-size: cover;
+    background-position: top center; 
+}
+
+
+/* Content styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+/* Contact form styles */
+.contact-form {
+    margin-top: 50px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #00ff48;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #15c03a;
+}
+/* Social button styles */
+.social-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3b5998; /* Facebook color */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background-color: #2e488f; 
+}
+
+.instagram {
+    background-color: #bc2a8d;
+}
+
+.twitter {
+    background-color: #1da1f2; 
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-size: contain; 
+    }
+}
+@media (max-width: 480px) {
+    body {
+        background-size: auto; 
+    }
+}
